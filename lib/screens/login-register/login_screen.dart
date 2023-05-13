@@ -74,10 +74,11 @@ class _LoginPageState extends State<LoginPage> {
                                     if (ctrl.loginEmail.text == "admin") {
                                       if (ctrl.loginPassword.text ==
                                           "rootAdmin") {
-                                        Navigator.of(context).pushReplacement(
-                                            MaterialPageRoute(
-                                                builder: ((context) =>
-                                                    const AdminHome())));
+                                        Navigator.of(context)
+                                            .pushReplacement(MaterialPageRoute(
+                                          builder: ((context) =>
+                                              const AdminHome()),
+                                        ));
                                       }
                                     }
                                     // Log the user in
